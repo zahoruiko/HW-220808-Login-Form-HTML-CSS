@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+        body, html {
+            height: 100%;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(45deg, blue, transparent);
+            margin: 0;
+            /* display: flex;
+            justify-content: space-around;
+            align-items: center;  */
+        }
+        .login {
+            background-color: white;
+            /* border-radius: 10px; */
+            padding: 2rem;
+            /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            height: 100%;
+            /* width: 300px; */
+            box-sizing: border-box;
+            justify-content: center;
+
+
+        }
+        .login__icon {
+            font-size: 3rem;
+        }
+        .title {
+            font-size: 3rem;
+        }
+        .login__row {
+            margin-bottom: 3rem;
+            max-width: 300px;
+        }
+        .login__input {
+            outline: none;
+            border: none;
+            background: none;
+            padding: 1rem;
+            font-size: 1rem;
+        }
+        .login__input::placeholder {
+            color: #999;
+        }
+        .login__input-container {
+            background-color: lightblue;
+            padding-left: 1rem;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .login__button {
+            padding: 1rem 3rem;
+            background: #99A;
+            color: white;
+            cursor: pointer;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+
+        }
+        .wrapper {
+            display: flex;
+            width: 100%;
+            height: 100%;
+
+        }
+        .form {
+            width: 50%;
+        }
+        .image {
+            width: 50%;
+            height: 100%;
+            background-image: url(photo-1509822929063-6b6cfc9b42f2.avif);
+            background-size: cover;
+            background-position: center;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="form">
+            <div class="login">
+                <div class="login__row">
+                    <span class="login__icon">
+                        <span class="las la-sign-in-alt"></span>
+                    </span>
+                </div>
+                <h1 class="title">
+                    Willkommen!
+                </h1>
+                <div class="login__row">
+                    <div class="login__input-container">
+                        <span class="las la-user"></span>
+                        <input class="login__input" type="text" placeholder="Login">
+                    </div>
+                    
+                </div>
+                <div class="login__row">
+                    <div class="login__input-container">
+                        <span class="las la-key"></span>
+                        <input class="login__input" type="password" placeholder="Password">
+                    </div>
+                </div>
+                <div class="login__row">
+                    <button class="login__button">Log in</button>
+                </div>
+            </div>
+        </div>
+        <div class="image">
+
+        </div>
+
+
+    </div>
+    
+</body>
+</html>
